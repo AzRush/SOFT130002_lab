@@ -12,15 +12,15 @@
     <form action="#" method="POST">
         <p>
             您的用户名<br>
-            <input type="text" name="nickname"  pattern="([0-9]|[a-z]|[A-Z]|&#95){1,}"  required>
+            <input type="text" name="nickname"  pattern="([0-9]|[a-z]|[A-Z]|&#95){1,}"  title="用户名只能是数字大小写字母和下划线的组合" required>
         </p>
         <p>
             请设置密码<br>
-            <input type="password" name="password" pattern="([0-9]|[a-z]|[A-Z]){8,}"  required>
+            <input type="password" name="password" pattern="([0-9]|[a-z]|[A-Z]){8,}"  title="密码至少为8位" required>
         </p>
         <p>
             请确认密码<br>
-            <input type="password" name="password" pattern="([0-9]|[a-z]|[A-Z]){8,}" required>
+            <input type="password" name="password" pattern="([0-9]|[a-z]|[A-Z]){8,}" title="密码至少为8位" required>
         </p>
         <p>
             您的居住地<br>
@@ -63,7 +63,7 @@
         </p>
         <p>
             您的电话号码<br>
-            <input type="tel" name="telephoneNumber" pattern="^[1][0-9]{10}" required>
+            <input type="tel" name="telephoneNumber" pattern="^[1][0-9]{10}" title="请填写11位手机号" required>
         </p>
         <p>
             您常用的设备<br>
